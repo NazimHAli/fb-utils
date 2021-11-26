@@ -8,6 +8,7 @@
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
 ## Work in progress
+
 > Firebase utility functions to help working with firebase easier.
 
 Motivation was after following the official docs/examples I ended up with gray hair trying to deploy a simple Cloud Function that caches Firestore queries/data. The idea is to abstract re-usable methods for anyone working with firebase/firestore.
@@ -27,8 +28,8 @@ npm install fb-utils
 ```ts
 import { cacheFirestoreQuery } from "fb-utils";
 
-cacheFirestoreQuery("hello");
-//=> 'hello from my package'
+cacheFirestoreQuery("test");
+//=> 'test'
 ```
 
 [build-img]: https://github.com/NazimHAli/fb-utils/actions/workflows/release.yml/badge.svg
