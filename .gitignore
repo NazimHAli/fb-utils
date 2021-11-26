@@ -1,0 +1,6 @@
+*.log
+.env*
+.husky
+.vscode
+coverage
+node_modules
