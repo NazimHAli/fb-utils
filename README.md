@@ -7,6 +7,7 @@
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
+## Work in progress
 > Firebase utility functions to help working with firebase easier.
 
 Motivation was after following the official docs/examples I ended up with gray hair trying to deploy a simple Cloud Function that caches Firestore queries/data. The idea is to abstract re-usable methods for anyone working with firebase/firestore.
@@ -15,6 +16,8 @@ Motivation was after following the official docs/examples I ended up with gray h
 
 ```bash
 yarn add fb-utils
+
+or
 
 npm install fb-utils
 ```
@@ -27,27 +30,6 @@ import { cacheFirestoreQuery } from "fb-utils";
 cacheFirestoreQuery("hello");
 //=> 'hello from my package'
 ```
-
-## API
-
-### cacheFirestoreQuery(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`
-Default: `rainbows`
-
-Lorem ipsum.
 
 [build-img]: https://github.com/NazimHAli/fb-utils/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/NazimHAli/fb-utils/actions/workflows/release.yml
