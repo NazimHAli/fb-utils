@@ -20,7 +20,7 @@
   "eslintIgnore": [
     ".pnp.js",
     ".yarn",
-    "**/lib"
+    "**/dist"
   ],
   "jest": {
     "preset": "ts-jest"
@@ -98,7 +98,7 @@
   "homepage": "https://github.com/NazimHAli/fb-utils#readme",
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   },
   "lint-staged": {

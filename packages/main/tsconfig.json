@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
-    "outDir": "../../lib/main",
+    "outDir": "../../dist/main",
     "paths": {
       "@main-src/*": ["./src/*"]
     },

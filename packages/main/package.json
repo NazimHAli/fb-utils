@@ -2,7 +2,7 @@
   "name": "main",
   "version": "1.0.1",
   "scripts": {
-    "build": "esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../lib/main'",
+    "build": "esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../dist/main'",
     "cm": "cz",
     "lint": "tsc --noEmit",
     "test": "yarn lint && yarn test:coverage",
