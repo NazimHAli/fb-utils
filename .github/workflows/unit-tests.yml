@@ -20,14 +20,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Get Yarn cache
-        id: yarn-cache
+        id: yarn-cache-dir
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Use Yarn cache
         uses: actions/cache@v2
         id: yarn-cache
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install
