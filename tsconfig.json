@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
     "outDir": "./lib/",
+    "paths": {
+      "@main-src/*": ["./packages/main/src/*"]
+    },
     "skipLibCheck": true,
     "strict": true,
-    "target": "es6",
-    "paths": {
-      "@main-src/*": ["packages/main/src/*"]
-    }
+    "target": "es6"
   },
-  "include": ["packages/**/**src/**/*.ts", "packages/**/**test/**/*.ts"]
+  "include": ["./packages/**/**src/**/*.ts", "./packages/**/**test/**/*.ts"]
 }

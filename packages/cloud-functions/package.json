@@ -2,9 +2,10 @@
   "name": "cloud-functions",
   "packageManager": "yarn@3.1.1",
   "scripts": {
-    "build": "tsc"
+    "build": "esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../lib/cloud-functions'"
   },
   "devDependencies": {
+    "esbuild": "*",
     "typescript": "*"
   }
 }

@@ -1,26 +1,20 @@
 {
   "name": "main",
   "version": "1.0.1",
-  "main": "./lib/src/index.js",
-  "files": [
-    "lib/**/*"
-  ],
   "scripts": {
-    "build": "yarn clean && tsc",
-    "clean": "rm -rf ./lib/",
+    "build": "esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../lib/main'",
     "cm": "cz",
-    "lint": "yarn lint:pre && yarn lint:ts",
-    "lint:fix": "yarn lint:pre -w",
-    "lint:pre": "prettier --check ./src",
+    "lint": "yarn lint:ts",
     "lint:ts": "tsc --noEmit",
     "test": "yarn lint && yarn test:coverage",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest"
   },
   "devDependencies": {
     "@types/jest": "*",
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
+    "esbuild": "*",
     "eslint": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-functional": "*",
@@ -33,10 +27,7 @@
     "eslint-plugin-react-hooks": "*",
     "eslint-plugin-simple-import-sort": "*",
     "jest": "*",
-    "jest-junit": "*",
-    "lint-staged": "*",
     "prettier": "*",
-    "semantic-release": "*",
     "ts-jest": "*",
     "ts-node": "*",
     "tsconfig-paths": "*",
