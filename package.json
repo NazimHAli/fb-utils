@@ -8,7 +8,6 @@
   ],
   "scripts": {
     "cm": "cz",
-    "cm:test": "cz",
     "lintall": "prettier --check ./packages -w",
     "prepare": "husky install",
     "semantic-release": "semantic-release"
