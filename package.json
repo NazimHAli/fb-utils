@@ -99,5 +99,10 @@
   "homepage": "https://github.com/NazimHAli/fb-utils#readme",
   "lint-staged": {
     "*": "yarn lintall"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
