@@ -4,8 +4,7 @@
   "scripts": {
     "build": "esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../lib/main'",
     "cm": "cz",
-    "lint": "yarn lint:ts",
-    "lint:ts": "tsc --noEmit",
+    "lint": "tsc --noEmit",
     "test": "yarn lint && yarn test:coverage",
     "test:coverage": "jest"
   },
