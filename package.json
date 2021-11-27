@@ -44,6 +44,11 @@
   "homepage": "https://github.com/NazimHAli/fb-utils#readme",
   "dependencies": {},
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/jest": "^27.0.3",
     "@types/node": "^12.20.11",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
@@ -75,6 +80,12 @@
   "release": {
     "branches": [
       "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/git"
     ]
   }
 }
