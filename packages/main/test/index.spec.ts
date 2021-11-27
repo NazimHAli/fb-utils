@@ -1,4 +1,4 @@
-import { cacheFirestoreQuery } from "@/src/index";
+import { cacheFirestoreQuery } from "@main-src/index";
 
 describe("index", () => {
   describe("cacheFirestoreQuery", () => {

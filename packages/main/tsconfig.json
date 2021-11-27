@@ -10,8 +10,8 @@
     "strict": true,
     "target": "es6",
     "paths": {
-      "@main-src/*": ["packages/main/src/*"]
+      "@main-src/*": ["src/*"]
     }
   },
-  "include": ["packages/**/**src/**/*.ts", "packages/**/**test/**/*.ts"]
+  "include": ["src/**/*.ts", "test/**/*.ts"]
 }

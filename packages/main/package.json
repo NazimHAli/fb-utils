@@ -1,0 +1,45 @@
+{
+  "name": "main",
+  "version": "1.0.1",
+  "main": "./lib/src/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf ./lib/",
+    "cm": "cz",
+    "lint": "yarn lint:pre && yarn lint:ts",
+    "lint:fix": "yarn lint:pre -w",
+    "lint:pre": "prettier --check ./src",
+    "lint:ts": "tsc --noEmit",
+    "test": "yarn lint && yarn test:coverage",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-functional": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jest": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-hooks": "*",
+    "eslint-plugin-simple-import-sort": "*",
+    "jest": "*",
+    "jest-junit": "*",
+    "lint-staged": "*",
+    "prettier": "*",
+    "semantic-release": "*",
+    "ts-jest": "*",
+    "ts-node": "*",
+    "tsconfig-paths": "*",
+    "typescript": "*"
+  }
+}

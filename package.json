@@ -2,22 +2,75 @@
   "name": "fb-utils",
   "version": "1.0.1",
   "description": "Firebase utility functions to help working with firebase easier.",
-  "main": "./lib/src/index.js",
-  "files": [
-    "lib/**/*"
+  "private": true,
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
-    "build": "yarn clean && tsc",
-    "clean": "rm -rf ./lib/",
-    "cm": "cz",
-    "lint": "yarn lint:pre && yarn lint:ts",
-    "lint:fix": "yarn lint:pre -w",
-    "lint:pre": "prettier --check ./src",
-    "lint:ts": "tsc --noEmit",
     "prepare": "husky install",
-    "semantic-release": "semantic-release",
-    "test": "yarn lint && yarn test:coverage",
-    "test:coverage": "jest --coverage"
+    "semantic-release": "semantic-release"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "eslintIgnore": [
+    ".pnp.js",
+    ".yarn",
+    "**/lib"
+  ],
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/config-lerna-scopes": "^15.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^12.20.11",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-functional": "^3.7.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.0.2",
+    "prettier": "^2.5.0",
+    "semantic-release": "^18.0.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "4.4.4"
+  },
+  "packageManager": "yarn@3.1.1",
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ]
   },
   "repository": {
     "type": "git",
@@ -42,33 +95,6 @@
     "url": "https://github.com/NazimHAli/fb-utils/issues"
   },
   "homepage": "https://github.com/NazimHAli/fb-utils#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^8.0.3",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "@types/jest": "^27.0.3",
-    "@types/node": "^12.20.11",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
-    "jest": "^27.2.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "semantic-release": "^17.4.7",
-    "ts-jest": "^27.0.5",
-    "ts-node": "^10.2.1",
-    "tsconfig-paths": "^3.12.0",
-    "typescript": "^4.2.4"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -76,13 +102,5 @@
   },
   "lint-staged": {
     "*": "yarn lint:fix"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github",
-      "@semantic-release/npm"
-    ]
   }
 }
