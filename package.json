@@ -1,6 +1,6 @@
 {
   "name": "fb-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Firebase utility functions to help working with firebase easier.",
   "main": "./lib/src/index.js",
   "files": [
