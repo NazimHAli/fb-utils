@@ -1,11 +1,6 @@
 name: Release
 
-on:
-  push:
-    branches:
-      - master
-      - next
-      - beta
+on: [push]
 
 jobs:
   release:
@@ -18,17 +13,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get node_modules cache
-        uses: actions/cache@v2
+      - name: Node.js 14
+        uses: actions/setup-node@v2
         with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          node-version: 14
+          cache: "yarn"
+          cache-dependency-path: "**/yarn.lock"
 
       - name: Install
-        run: yarn
+        run: yarn install
 
       - name: Run Tests
-        run: yarn test
+        run: yarn workspaces foreach run test
 
       - name: Release
         run: npx semantic-release
