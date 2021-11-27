@@ -17,9 +17,11 @@ Motivation was after following the official docs/examples I ended up with gray h
 
 ```bash
 yarn add fb-utils
+```
 
 or
 
+```
 npm install fb-utils
 ```
 
