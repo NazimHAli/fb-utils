@@ -20,4 +20,4 @@ jobs:
         run: yarn
 
       - name: Run Tests
-        run: yarn test
+        run: yarn workspaces foreach run test
