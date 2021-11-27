@@ -21,7 +21,7 @@
   "eslintIgnore": [
     ".pnp.js",
     ".yarn",
-    "**/dist"
+    "**/dist/"
   ],
   "jest": {
     "preset": "ts-jest"
