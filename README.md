@@ -1,7 +1,3 @@
-## Just discovered [firebase-functions-helper](https://github.com/dalenguyen/firebase-functions-helper) and it's exactly what I was going to develop here, no point in duplicating. Recommend using that instead.
-
-
-
 ## fb-utils
 
 [![npm package][npm-img]][npm-url]
