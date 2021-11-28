@@ -6,12 +6,13 @@
     "packages/*"
   ],
   "scripts": {
-    "cm": "cz",
     "cleanall": "rm -rf ./node_modules && rm -rf ./packages/**/node_modules",
+    "cm": "cz",
     "lintall": "prettier --check ./packages -w",
     "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
+    "postversion": "cp -r package.json .. && cp -r npm-shrinkwrap.json ..",
+    "prepublishOnly": "pinst --disable",
     "semantic-release": "semantic-release"
   },
   "commitlint": {
