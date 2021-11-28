@@ -68,13 +68,14 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/github", {
-        "assets": [
-          {"path": "dist", "label": "distribution"}
-        ]
-      }],
       ["@semantic-release/npm", {
         "pkgRoot": "dist"
+      }],
+      ["@semantic-release/github", {
+        "assets": [
+          {"path": "dist", "label": "distribution"},
+          ["package.json", "npm-shrinkwrap.json"]
+        ]
       }]
     ]
   },
