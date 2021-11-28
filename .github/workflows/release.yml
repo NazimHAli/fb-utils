@@ -27,8 +27,8 @@ jobs:
       - name: Install
         run: yarn install
 
-      - name: Run Tests
-        run: yarn workspaces foreach run test
+      - name: Build
+        run: yarn workspaces foreach run build
 
       - name: Release
         run: yarn semantic-release
