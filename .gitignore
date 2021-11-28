@@ -1,3 +1,4 @@
+.firebaserc
 .yarn/*
 !/.yarn/releases
 !/.yarn/plugins

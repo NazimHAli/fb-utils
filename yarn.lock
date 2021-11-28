@@ -658,29 +658,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@frontend-monorepo-template/package-a@workspace:packages/package-a":
+"@fb-utils/cloud-functions@workspace:packages/cloud-functions":
   version: 0.0.0-use.local
-  resolution: "@frontend-monorepo-template/package-a@workspace:packages/package-a"
-  dependencies:
-    "@types/jest": "*"
-    "@types/node": "*"
-    "@typescript-eslint/eslint-plugin": "*"
-    "@typescript-eslint/parser": "*"
-    esbuild: "*"
-    eslint: "*"
-    eslint-config-prettier: "*"
-    jest: "*"
-    prettier: "*"
-    ts-jest: "*"
-    ts-node: "*"
-    tsconfig-paths: "*"
-    typescript: "*"
-  languageName: unknown
-  linkType: soft
-
-"@frontend-monorepo-template/package-b@workspace:packages/package-b":
-  version: 0.0.0-use.local
-  resolution: "@frontend-monorepo-template/package-b@workspace:packages/package-b"
+  resolution: "@fb-utils/cloud-functions@workspace:packages/cloud-functions"
   dependencies:
     "@types/jest": "*"
     "@types/node": "*"

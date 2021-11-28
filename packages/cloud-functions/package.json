@@ -1,8 +1,8 @@
 {
-  "name": "@frontend-monorepo-template/package-b",
+  "name": "@fb-utils/cloud-functions",
   "version": "1.0.0",
   "scripts": {
-    "build": "yarn build:test && esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../dist/package-b'",
+    "build": "yarn build:test && esbuild ./src --bundle --splitting --format=esm --minify --entry-names='[name]-[hash]' --chunk-names='[name]-[hash]' --outdir='../../dist/cloud-functions'",
     "build:test": "yarn lint && yarn test",
     "cm": "cz",
     "lint": "prettier --check .",
