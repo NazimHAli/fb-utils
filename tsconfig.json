@@ -4,12 +4,8 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
-    "paths": {
-      "@main-src/*": ["./packages/main/src/*"]
-    },
     "skipLibCheck": true,
     "strict": true,
     "target": "es6"
-  },
-  "include": ["./packages/**/**src/**/*.ts", "./packages/**/**test/**/*.ts"]
+  }
 }
