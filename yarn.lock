@@ -4262,6 +4262,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fb-utils@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "fb-utils@workspace:."
+  dependencies:
+    "@babel/core": ^7.16.0
+    "@commitlint/cli": ^15.0.0
+    "@commitlint/config-conventional": ^15.0.0
+    "@semantic-release/changelog": ^6.0.1
+    "@semantic-release/commit-analyzer": ^9.0.2
+    "@semantic-release/git": ^10.0.1
+    "@semantic-release/npm": ^8.0.3
+    "@semantic-release/release-notes-generator": ^10.0.3
+    "@types/jest": ^27.0.3
+    "@types/node": ^12.20.11
+    "@typescript-eslint/eslint-plugin": ^5.4.0
+    "@typescript-eslint/parser": ^5.4.0
+    commitizen: ^4.2.4
+    cz-conventional-changelog: 3.3.0
+    esbuild: ^0.14.0
+    eslint: ^7.32.0
+    eslint-config-prettier: ^8.3.0
+    eslint-plugin-functional: ^3.7.2
+    eslint-plugin-import: ^2.25.3
+    eslint-plugin-jest: ^25.2.4
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-prettier: ^4.0.0
+    eslint-plugin-simple-import-sort: ^7.0.0
+    husky: ^7.0.4
+    jest: ^27.3.1
+    lint-staged: ^12.1.2
+    prettier: ^2.5.0
+    semantic-release: ^18.0.1
+    ts-jest: ^27.0.7
+    ts-node: ^10.2.1
+    tsconfig-paths: ^3.12.0
+    typescript: ^4.5.2
+  languageName: unknown
+  linkType: soft
+
 "fb-watchman@npm:^2.0.0":
   version: 2.0.1
   resolution: "fb-watchman@npm:2.0.1"
@@ -4436,45 +4475,6 @@ __metadata:
   checksum: 33729c529ce19f5494f846f0dd4945078f4e37f4e8955f4ae8cc7385c218f600e9d93a7d225d17636c20d1889106fd87061f911550861b7072f53bf891e6b341
   languageName: node
   linkType: hard
-
-"frontend-monorepo-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "frontend-monorepo-template@workspace:."
-  dependencies:
-    "@babel/core": ^7.16.0
-    "@commitlint/cli": ^15.0.0
-    "@commitlint/config-conventional": ^15.0.0
-    "@semantic-release/changelog": ^6.0.1
-    "@semantic-release/commit-analyzer": ^9.0.2
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/npm": ^8.0.3
-    "@semantic-release/release-notes-generator": ^10.0.3
-    "@types/jest": ^27.0.3
-    "@types/node": ^12.20.11
-    "@typescript-eslint/eslint-plugin": ^5.4.0
-    "@typescript-eslint/parser": ^5.4.0
-    commitizen: ^4.2.4
-    cz-conventional-changelog: 3.3.0
-    esbuild: ^0.14.0
-    eslint: ^7.32.0
-    eslint-config-prettier: ^8.3.0
-    eslint-plugin-functional: ^3.7.2
-    eslint-plugin-import: ^2.25.3
-    eslint-plugin-jest: ^25.2.4
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-simple-import-sort: ^7.0.0
-    husky: ^7.0.4
-    jest: ^27.3.1
-    lint-staged: ^12.1.2
-    prettier: ^2.5.0
-    semantic-release: ^18.0.1
-    ts-jest: ^27.0.7
-    ts-node: ^10.2.1
-    tsconfig-paths: ^3.12.0
-    typescript: ^4.5.2
-  languageName: unknown
-  linkType: soft
 
 "fs-extra@npm:8.1.0":
   version: 8.1.0
