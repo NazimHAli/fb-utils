@@ -1,7 +1,7 @@
 {
-  "name": "frontend-monorepo-template",
+  "name": "fb-utils",
   "version": "1.0.0",
-  "description": "Monorepo template configured with Yarn 2, Typescript, automated Gihub releases and npm publishing.",
+  "description": "Firebase utility functions to help working with firebase easier.",
   "workspaces": [
     "packages/*"
   ],
@@ -69,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NazimHAli/frontend-monorepo-template.git"
+    "url": "git+https://github.com/NazimHAli/fb-utils.git"
   },
   "license": "MIT",
   "author": {
@@ -80,22 +80,27 @@
     "node": ">=14.0"
   },
   "keywords": [
-    "monorepo",
-    "template",
-    "typescript",
-    "workspaces",
-    "yarn"
+    "firebase",
+    "firestore",
+    "cloud-functions",
+    "data bundles",
+    "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/NazimHAli/frontend-monorepo-template/issues"
+    "url": "https://github.com/NazimHAli/fb-utils/issues"
   },
-  "homepage": "https://github.com/NazimHAli/frontend-monorepo-template#readme",
+  "homepage": "https://github.com/NazimHAli/fb-utils#readme",
   "lint-staged": {
     "*": "yarn lintall"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
