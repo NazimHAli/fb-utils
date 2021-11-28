@@ -6,13 +6,12 @@
     "packages/*"
   ],
   "scripts": {
-    "cleanall": "rm -rf ./node_modules && rm -rf ./packages/**/node_modules",
     "cm": "cz",
+    "cleanall": "rm -rf ./node_modules && rm -rf ./packages/**/node_modules",
     "lintall": "prettier --check ./packages -w",
     "postinstall": "husky install",
-    "postpublish": "pinst --enable",
-    "postversion": "cp -r package.json ..",
     "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "semantic-release": "semantic-release"
   },
   "commitlint": {
@@ -68,15 +67,12 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/npm", {
-        "pkgRoot": "dist"
-      }],
       ["@semantic-release/github", {
         "assets": [
-          {"path": "dist", "label": "distribution"},
-          ["package.json", "npm-shrinkwrap.json"]
+          {"path": "dist", "label": "distribution"}
         ]
-      }]
+      }],
+      "@semantic-release/npm"
     ]
   },
   "repository": {
