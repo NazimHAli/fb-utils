@@ -2,6 +2,7 @@
 
 [![npm package][npm-img]][npm-url]
 [![Build Status][build-img]][build-url]
+![Build Size][build-size]
 [![Downloads][downloads-img]][downloads-url]
 [![Issues][issues-img]][issues-url]
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
@@ -36,6 +37,7 @@ cacheFirestoreQuery("test");
 
 [build-img]: https://github.com/NazimHAli/fb-utils/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/NazimHAli/fb-utils/actions/workflows/release.yml
+[build-size]: https://badgen.net/bundlephobia/minzip/fb-utils
 [downloads-img]: https://img.shields.io/npm/dt/fb-utils
 [downloads-url]: https://www.npmtrends.com/fb-utils
 [npm-img]: https://img.shields.io/npm/v/fb-utils
